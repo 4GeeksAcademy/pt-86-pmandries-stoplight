@@ -1,18 +1,29 @@
 import React from "react";
+import {useState} from "react";
 
 //include images into your bundle
 import rigoImage from "../../img/rigo-baby.jpg";
 
 //create your first component
 const Home = () => {
+	const [redState, setRedState] = useState("redOff");
+	const [yellowState, setYellowState] = useState("yellowOff");
+	const [greenState, setGreenState] = useState("greenOff");
+	
 	return (
-		<div className="text-center text-light container-fluid display-flex">
-            <div className = "container mt-5 bg-secondary" id = "trafficTop">Top</div>
-			<div className = "container mt-5 bg-black" id = "container">
-				<div className = "container rounded-circle bg-danger">Red</div>
-				<div className = "container radius-50 bg-warning">Yellow</div>
-				<div className = "container radius-50 bg-success">Green</div>
+		<div className="container-fluid display-flex">
+			<div className = "" id = "lightBody">
+				<div className = {redState}
+				onClick = {redState == "redOff" ? () => setRedState("redOn") : () => setRedState("redOff")}
+				></div>
+				<div className = {yellowState}
+				onClick = {yellowState == "yellowOff" ? () => setYellowState("yellowOn") : () => setYellowState("yellowOff")}
+				></div>
+				<div className = {greenState}
+				onClick = {greenState == "greenOff" ? () => setGreenState("greenOn") : () => setGreenState("greenOff")}
+				></div>
 			</div>
+			<div className = "" id = "lightPost"></div>
 
 			
 		</div>

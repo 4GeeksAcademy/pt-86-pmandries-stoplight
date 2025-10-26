@@ -1,11 +1,79 @@
-/* 
+body {
+    background-image: url("https://cdn.pixabay.com/photo/2013/08/11/04/24/city-171444_1280.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+#lightPost {
+    width: 20px;
+    height: 240px;
+    background-color: black;
+    margin: auto;
+    position: relative;
+    left: 20px;
+}
 
-*/
+#lightBody {
+    width: 75px;
+    height: 200px;
+    background-color: black;
+    margin: auto;
+    margin-top: 290px;
+    padding: 12.5px;
+    position: relative;
+    left: 20px;
+}
+
+.redOff {
+    width: 50px;
+    height: 50px;
+    background-color: #491717;
+    margin: auto;
+    border-radius: 50%;
+    border-radius: 50%;
+}
+
+.yellowOff {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(77, 77, 17);
+    margin: auto;
+    margin-top: 12.5px;
+    border-radius: 50%;
+}
+
+.greenOff {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(38, 51, 38);
+    margin: auto;
+    margin-top: 12.5px;
+    border-radius: 50%;
+}
+
+.redOn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(244, 12, 12);
+    margin: auto;
+    border-radius: 50%;
+}
+
+.yellowOn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(237, 237, 10);
+    margin: auto;
+    margin-top: 12.5px;
+    border-radius: 50%;
+}
+
+.greenOn {
+    width: 50px;
+    height: 50px;
+    background-color: rgb(8, 242, 8);
+    margin: auto;
+    margin-top: 12.5px;
+    border-radius: 50%;
+}
